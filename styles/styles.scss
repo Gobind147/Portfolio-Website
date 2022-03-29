@@ -59,26 +59,34 @@ section{
 .sec1{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: rgb(148, 218, 19);
 }
 
 .sec2{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: slateblue;
 }
 
 .sec3{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: rgb(146, 205, 90);
 }
 
 .sec4{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: rgb(194, 205, 90);
 }
 
 .sec5{
     display: none;
     transform: translateY(0) scale(1);
+}
+
+.active{
+    display: block;
 }
 
 //control
