@@ -104,5 +104,10 @@ section{
         align-items: center;
         margin: .7rem 0;
         box-shadow: var(--box-shadow-1);
+        i{
+            font-size: 1.2rem;
+            color: var(--color-grey-2);
+            pointer-events: none;
+        }
     }
 }
