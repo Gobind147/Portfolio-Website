@@ -59,25 +59,25 @@ section{
 .sec1{
     display: none;
     transform: translateY(0) scale(1);
-    background-color: rgb(148, 218, 19);
+    
 }
 
 .sec2{
     display: none;
     transform: translateY(0) scale(1);
-    background-color: slateblue;
+    
 }
 
 .sec3{
     display: none;
     transform: translateY(0) scale(1);
-    background-color: rgb(146, 205, 90);
+    
 }
 
 .sec4{
     display: none;
     transform: translateY(0) scale(1);
-    background-color: rgb(194, 205, 90);
+    
 }
 
 .sec5{
@@ -87,6 +87,15 @@ section{
 
 .active{
     display: block;
+    animation: scaleAnim 1s ease-in-out;
+    @keyframes scaleAnim {
+        0%{
+            transform: translateY(-100%) scaleY(0)
+        }
+        100%{
+            transform: translateY(0) scaleY(1)
+        }
+    }
 }
 
 //control
@@ -123,6 +132,28 @@ section{
             font-size: 1.2rem;
             color: var(--color-grey-2);
             pointer-events: none;
+        }
+    }
+}
+
+
+.header-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    .left-header{
+        display: flex;
+        align-items: center;
+        position: relative;
+        .h-shape{
+            transition: all .4s ease-in-out;
+            width: 65%;
+            height: 100%;
+            background-color: var(--color-secondary);
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
         }
     }
 }
